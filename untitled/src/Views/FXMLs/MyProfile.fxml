@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #afeeee;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="51.0" layoutY="421.0" prefHeight="98.0" prefWidth="374.0" style="-fx-background-color: #48d1cc;">
+         <children>
+            <TextField fx:id="MyProfilePasswordtx" editable="false" layoutX="137.0" layoutY="54.0" prefHeight="38.0" prefWidth="237.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+         </children></AnchorPane>
+      <AnchorPane layoutX="51.0" layoutY="164.0" prefHeight="237.0" prefWidth="374.0" style="-fx-background-color: #48d1cc;">
+         <children>
+            <TextField fx:id="MyProfileNametx" editable="false" layoutX="112.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="MyProfileSurnametx" editable="false" layoutX="112.0" layoutY="47.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="MyProfileCareertx" editable="false" layoutX="112.0" layoutY="92.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="MyProfilePhonetx" editable="false" layoutX="112.0" layoutY="141.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="MyProfileGenretx" editable="false" layoutX="112.0" layoutY="188.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+         </children></AnchorPane>
+      <Label layoutX="53.0" layoutY="42.0" text="Mi Perfil">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="169.0" text="Nombre">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="218.0" text="Apellido">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="267.0" text="Carrera">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="314.0" text="Telefono">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="359.0" text="Genero">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="428.0" text="Usuario">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="481.0" text="Contraseña">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="editProfile" layoutX="850.0" layoutY="14.0" mnemonicParsing="false" onAction="#editMyProfile" text="Editar Perfil">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="mainPage" layoutX="50.0" layoutY="533.0" mnemonicParsing="false" onAction="#mainPage" text="Menú Principal">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="MyProfileUsernametx" editable="false" layoutX="190.0" layoutY="424.0" prefHeight="38.0" prefWidth="237.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="saveChanges" layoutX="797.0" layoutY="65.0" mnemonicParsing="false" onAction="#saveChanges" text="Guardar Cambios">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btAcceptRequest" layoutX="782.0" layoutY="120.0" mnemonicParsing="false" onAction="#btAcceptRequest" text="Aceptar Solicitudes">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="ridesTable" editable="false" layoutX="452.0" layoutY="215.0" prefHeight="297.0" prefWidth="504.0">
+         <columns>
+            <TableColumn fx:id="ruta" editable="false" prefWidth="251.0" sortable="false" text="Ruta" />
+            <TableColumn fx:id="fecha" editable="false" minWidth="0.0" prefWidth="231.0" sortable="false" text="Fecha" />
+         </columns>
+      </TableView>
+      <Button fx:id="btRemovePassenger" layoutX="452.0" layoutY="533.0" mnemonicParsing="false" onAction="#btRemovePassenger" text="Darse de baja">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="561.0" layoutY="182.0" text="Viajes en los que esta anotado">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btDefaultVehicle" layoutX="50.0" layoutY="120.0" mnemonicParsing="false" onAction="#btDefaultVehicle" prefHeight="25.0" prefWidth="197.0" text="Añadir un vehículo default" />
+   </children>
+</AnchorPane>
